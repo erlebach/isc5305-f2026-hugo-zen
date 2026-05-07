@@ -1,0 +1,26 @@
+{
+  "eval_id": 3,
+  "eval_name": "bundle-organization-with-css",
+  "expectations": [
+    {
+      "text": "section-vs-leaf",
+      "passed": true,
+      "evidence": "Clear distinction between _index.md (section) and index.md (leaf) with proper use cases"
+    },
+    {
+      "text": "directory-examples",
+      "passed": true,
+      "evidence": "Shows practical three-tier hierarchy (modules → lessons) with complete directory structure"
+    },
+    {
+      "text": "resource-organization",
+      "passed": true,
+      "evidence": "Explains how resources stay bundled with content, no scattered files"
+    },
+    {
+      "text": "css-simplicity",
+      "passed": true,
+      "evidence": "Dedicated CSS section: 'Structure First, Styles Second' philosophy, CSS Architecture with Bundles pattern, audit Zen first, use variables, shows good vs bad CSS approaches"
+    }
+  ]
+}

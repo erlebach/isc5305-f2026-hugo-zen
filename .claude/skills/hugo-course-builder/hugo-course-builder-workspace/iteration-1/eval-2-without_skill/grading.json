@@ -1,0 +1,26 @@
+{
+  "eval_id": 2,
+  "eval_name": "frontmatter-taxonomies",
+  "expectations": [
+    {
+      "text": "yaml-template",
+      "passed": true,
+      "evidence": "Provides YAML template but uses nested structure with 'assignment' object containing fields, requiring more complex parsing"
+    },
+    {
+      "text": "taxonomy-config",
+      "passed": true,
+      "evidence": "Shows custom taxonomies and explains Hugo's taxonomy system with examples of how terms auto-generate pages"
+    },
+    {
+      "text": "leaf-bundle-structure",
+      "passed": false,
+      "evidence": "Focuses on nested assignment object structure rather than emphasizing Hugo's leaf bundle filesystem organization for resource co-location"
+    },
+    {
+      "text": "resource-access",
+      "passed": false,
+      "evidence": "Explains assigning files via front matter fields (resources array) rather than leveraging Hugo's .Resources method for leaf bundle resources"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "eval_id": 1,
+  "eval_name": "initialization-setup",
+  "expectations": [
+    {
+      "text": "includes-git-submodule-setup",
+      "passed": true,
+      "evidence": "Shows git submodule add and even goes further with git checkout v0.161.0 to pin exact version"
+    },
+    {
+      "text": "shows-hugo-config",
+      "passed": true,
+      "evidence": "Very comprehensive hugo.yaml with additional Zen-specific parameters (logoWidth, imageMaxWidth, mobileMenu, etc.)"
+    },
+    {
+      "text": "course-structure",
+      "passed": true,
+      "evidence": "Describes modules, homework, resources directory structure with explanation"
+    },
+    {
+      "text": "explains-reasoning",
+      "passed": true,
+      "evidence": "Provides detailed WHY sections explaining version pinning, submodules, and configuration choices"
+    }
+  ]
+}

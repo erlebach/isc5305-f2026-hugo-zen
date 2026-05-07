@@ -1,0 +1,27 @@
+{
+  "eval_id": 1,
+  "eval_name": "initialization-setup",
+  "prompt": "I'm starting a new Hugo site for a C++ course I'm teaching. I need to set it up with the Zen theme, version 0.161.0. The site will have modules, homework assignments, and resources. What are the initialization steps and how should I structure my content directories?",
+  "assertions": [
+    {
+      "name": "includes-git-submodule-setup",
+      "description": "Response explains git initialization and adding Zen theme as a submodule",
+      "passed": false
+    },
+    {
+      "name": "shows-hugo-config",
+      "description": "Provides hugo.toml with theme and taxonomy configuration",
+      "passed": false
+    },
+    {
+      "name": "course-structure",
+      "description": "Shows directory structure for modules, homework, and resources",
+      "passed": false
+    },
+    {
+      "name": "explains-reasoning",
+      "description": "Explains WHY each setup step matters (not just HOW)",
+      "passed": false
+    }
+  ]
+}

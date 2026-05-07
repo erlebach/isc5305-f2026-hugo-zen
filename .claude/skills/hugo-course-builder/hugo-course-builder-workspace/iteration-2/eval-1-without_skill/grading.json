@@ -1,0 +1,26 @@
+{
+  "eval_id": 1,
+  "eval_name": "initialization-setup",
+  "expectations": [
+    {
+      "text": "includes-git-submodule-setup",
+      "passed": true,
+      "evidence": "Mentions Hugo modules instead of submodules, showing alternative approach"
+    },
+    {
+      "text": "shows-hugo-config",
+      "passed": true,
+      "evidence": "Configuration guidance with menu setup and parameters"
+    },
+    {
+      "text": "course-structure",
+      "passed": true,
+      "evidence": "Describes modules, homework, resources, and static files organization"
+    },
+    {
+      "text": "explains-reasoning",
+      "passed": true,
+      "evidence": "Provides reasoning for directory choices and workflow benefits"
+    }
+  ]
+}

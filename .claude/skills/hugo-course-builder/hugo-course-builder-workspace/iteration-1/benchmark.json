@@ -1,0 +1,99 @@
+{
+  "skill_name": "hugo-course-builder",
+  "iteration": 1,
+  "summary": {
+    "total_tests": 3,
+    "with_skill": {
+      "pass_rate": "91.7%",
+      "assertions_passed": 11,
+      "assertions_total": 12,
+      "avg_tokens": 25365,
+      "avg_duration_ms": 41907,
+      "avg_duration_seconds": 41.9
+    },
+    "without_skill": {
+      "pass_rate": "83.3%",
+      "assertions_passed": 10,
+      "assertions_total": 12,
+      "avg_tokens": 25780,
+      "avg_duration_ms": 48688,
+      "avg_duration_seconds": 48.7
+    },
+    "advantage": {
+      "pass_rate_delta": "+8.4%",
+      "token_efficiency": "-1.6% tokens",
+      "speed_advantage": "13.9% faster",
+      "interpretation": "Skill improves quality and speed while using fewer tokens on average"
+    }
+  },
+  "per_test_results": [
+    {
+      "test_id": 1,
+      "test_name": "initialization-setup",
+      "with_skill": {
+        "pass_rate": "100%",
+        "assertions_passed": 4,
+        "assertions_total": 4,
+        "tokens": 25739,
+        "duration_ms": 46845,
+        "notes": "Perfect score - all assertions passed"
+      },
+      "without_skill": {
+        "pass_rate": "100%",
+        "assertions_passed": 4,
+        "assertions_total": 4,
+        "tokens": 27880,
+        "duration_ms": 64217,
+        "notes": "Also perfect - baseline included more detail on version pinning"
+      }
+    },
+    {
+      "test_id": 2,
+      "test_name": "frontmatter-taxonomies",
+      "with_skill": {
+        "pass_rate": "100%",
+        "assertions_passed": 4,
+        "assertions_total": 4,
+        "tokens": 26755,
+        "duration_ms": 46878,
+        "notes": "Perfect score - simple, correct YAML template aligned with Hugo conventions"
+      },
+      "without_skill": {
+        "pass_rate": "50%",
+        "assertions_passed": 2,
+        "assertions_total": 4,
+        "tokens": 22074,
+        "duration_ms": 44287,
+        "notes": "Failed on resource access approach - used nested assignment object instead of Hugo leaf bundles"
+      }
+    },
+    {
+      "test_id": 3,
+      "test_name": "bundle-organization",
+      "with_skill": {
+        "pass_rate": "75%",
+        "assertions_passed": 3,
+        "assertions_total": 4,
+        "tokens": 23600,
+        "duration_ms": 31898,
+        "notes": "Good coverage of bundles; missing explicit CSS advice requested by user"
+      },
+      "without_skill": {
+        "pass_rate": "75%",
+        "assertions_passed": 3,
+        "assertions_total": 4,
+        "tokens": 21386,
+        "duration_ms": 37561,
+        "notes": "Equivalent performance; both missing CSS simplicity guidance"
+      }
+    }
+  ],
+  "key_findings": [
+    "Skill provides 8.4% higher overall pass rate",
+    "Test 2 (Front Matter) shows clearest advantage: skill achieves 100% vs baseline 50%",
+    "Skill recommends simpler, more Hugo-idiomatic YAML structure vs complex nested approach",
+    "Speed improvement of 13.9% despite slightly higher token usage in some cases",
+    "Both variants miss CSS simplicity guidance - opportunity for skill improvement in iteration 2",
+    "Test 1 (Initialization) is strong for both - skill version is slightly more concise"
+  ]
+}
