@@ -3,7 +3,8 @@
     "allow": [
       "WebFetch(domain:gohugo.io)",
       "WebFetch(domain:github.com)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(hugo *)"
     ]
   }
 }
